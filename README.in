@@ -1,0 +1,52 @@
+# base-stretch
+
+![Pulls](https://img.shields.io/docker/pulls/=NAMESPACE=/stretch.svg)
+![Stars](https://img.shields.io/docker/stars/=NAMESPACE=/stretch.svg)
+
+The [Debian](https://debian.org/) [Stretch](https://wiki.debian.org/DebianStretch)
+[container image](https://hub.docker.com/r/=NAMESPACE=/stretch/) with few handy
+utilities, utf8 locales...
+
+## Quick Usage
+
+Run prebuilt:
+
+    $ docker run --rm -ti =NAMESPACE=/stretch bash
+
+Or you can clone & build, run `bash` to explore:
+
+    $ git clone https://github.com/multicast/docker-stretch
+    $ cd docker-stretch
+    $ docker build -t stretch .
+    $ docker run --rm -ti stretch bash
+
+Since the image is intended to be used as base image, I suppose more common usage
+would be in your own `Dockerfile` in the form:
+
+    FROM =NAMESPACE=/stretch:latest
+    ...
+
+## Build-time options
+
+You can `export` environment variables found in the following list:
+
+  * `ftp_proxy`
+  * `http_proxy`
+  * `https_proxy`
+
+The values for these variables will not end up in the resulting image.
+
+## Run-time options
+
+You can define environment variables via `--env` argument found in the following list:
+
+  * `ftp_proxy`
+  * `http_proxy`
+  * `https_proxy`
+  * `BASE_DEBUG`
+      * zero to higher numbers - to get more and more verbose
+  * `BASE_NOEXIT`
+      * set to 1 not to exit on startup errors
+
+# Packages
+
