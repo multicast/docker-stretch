@@ -20,20 +20,23 @@ build:
 	 --build-arg "http_proxy=${http_proxy}" \
 	 --build-arg "https_proxy=${https_proxy}" \
 	 .
-	docker run --rm $(NAME):$(VERSION) dpkg -l > dpkg-new.txt
+	docker image rm $(NAME):latest || true
+	docker tag $(NAME):$(VERSION) $(NAME):latest
 
 .PHONY: latest
 latest: build
-	docker tag $(NAME):$(VERSION) $(NAME):latest
+	docker run --rm $(NAME):$(VERSION) dpkg -l > dpkg-new.txt
 	diff dpkg-new.txt dpkg.txt 2>&1 >/dev/null && { \
 	  docker image rm $(NAME):$(VERSION); \
 	} || { \
 	  ( sed -e s/=NAMESPACE=/${NAMESPACE}/g README.in; \
 	    sed -e 's/^/    /' dpkg-new.txt ) > README.md; \
 	  git add README.md; \
-          git commit -nm "package updates on  ${VERSION}"; \
-          git push; \
-        }
+	  git commit -nm "package updates on  ${VERSION}"; \
+	  git push; \
+	  cp dpkg-new.txt dpkg.txt; \
+	}
+	rm -f dpkg-new.txt
 
 .PHONY: push
 push: latest
