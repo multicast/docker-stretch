@@ -71,7 +71,7 @@ You can define environment variables via `--env` argument found in the following
     ii  curl                       7.52.1-5+deb9u9                amd64        command line tool for transferring data with URL syntax
     ii  dash                       0.5.8-2.4                      amd64        POSIX-compliant shell
     ii  debconf                    1.5.61                         all          Debian configuration management system
-    ii  debian-archive-keyring     2017.5                         all          GnuPG archive keys of the Debian archive
+    ii  debian-archive-keyring     2017.5+deb9u1                  all          GnuPG archive keys of the Debian archive
     ii  debianutils                4.8.1.1                        amd64        Miscellaneous utilities specific to Debian
     ii  di                         4.34-2+b1                      amd64        advanced df like disk information utility
     ii  diffutils                  1:3.5-3                        amd64        File comparison utilities
