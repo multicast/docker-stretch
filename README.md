@@ -62,7 +62,7 @@ You can define environment variables via `--env` argument found in the following
     ii  adduser                    3.115                          all          add and remove users and groups
     ii  apt                        1.4.9                          amd64        commandline package manager
     ii  apt-utils                  1.4.9                          amd64        package management related utility programs
-    ii  base-files                 9.9+deb9u9                     amd64        Debian base system miscellaneous files
+    ii  base-files                 9.9+deb9u10                    amd64        Debian base system miscellaneous files
     ii  base-passwd                3.5.43                         amd64        Debian base system master password and group files
     ii  bash                       4.4-5                          amd64        GNU Bourne Again SHell
     ii  bsdutils                   1:2.29.2-1+deb9u1              amd64        basic utilities from 4.4BSD-Lite
@@ -125,8 +125,8 @@ You can define environment variables via `--env` argument found in the following
     ii  libkeyutils1:amd64         1.5.9-9                        amd64        Linux Key Management Utilities (library)
     ii  libkrb5-3:amd64            1.15-1+deb9u1                  amd64        MIT Kerberos runtime libraries
     ii  libkrb5support0:amd64      1.15-1+deb9u1                  amd64        MIT Kerberos runtime libraries - Support library
-    ii  libldap-2.4-2:amd64        2.4.44+dfsg-5+deb9u2           amd64        OpenLDAP libraries
-    ii  libldap-common             2.4.44+dfsg-5+deb9u2           all          OpenLDAP common files for libraries
+    ii  libldap-2.4-2:amd64        2.4.44+dfsg-5+deb9u3           amd64        OpenLDAP libraries
+    ii  libldap-common             2.4.44+dfsg-5+deb9u3           all          OpenLDAP common files for libraries
     ii  liblz4-1:amd64             0.0~r131-2+b1                  amd64        Fast LZ compression algorithm library - runtime
     ii  liblzma5:amd64             5.2.2-1.2+b1                   amd64        XZ-format compression library
     ii  libmount1:amd64            2.29.2-1+deb9u1                amd64        device mounting library
@@ -164,10 +164,10 @@ You can define environment variables via `--env` argument found in the following
     ii  libssl1.0.2:amd64          1.0.2s-1~deb9u1                amd64        Secure Sockets Layer toolkit - shared libraries
     ii  libssl1.1:amd64            1.1.0k-1~deb9u1                amd64        Secure Sockets Layer toolkit - shared libraries
     ii  libstdc++6:amd64           6.3.0-18+deb9u1                amd64        GNU Standard C++ Library v3
-    ii  libsystemd0:amd64          232-25+deb9u11                 amd64        systemd utility library
+    ii  libsystemd0:amd64          232-25+deb9u12                 amd64        systemd utility library
     ii  libtasn1-6:amd64           4.10-1.1+deb9u1                amd64        Manage ASN.1 structures (runtime)
     ii  libtinfo5:amd64            6.0+20161126-1+deb9u2          amd64        shared low-level terminfo library for terminal handling
-    ii  libudev1:amd64             232-25+deb9u11                 amd64        libudev shared library
+    ii  libudev1:amd64             232-25+deb9u12                 amd64        libudev shared library
     ii  libunistring0:amd64        0.9.6+really0.9.3-0.1          amd64        Unicode string library for C
     ii  libustr-1.0-1:amd64        1.0.4-6                        amd64        Micro string library: shared library
     ii  libuuid1:amd64             2.29.2-1+deb9u1                amd64        Universally Unique ID library
@@ -200,7 +200,7 @@ You can define environment variables via `--env` argument found in the following
     ii  tar                        1.29b-1.1                      amd64        GNU version of the tar archiving utility
     ii  tzdata                     2019b-0+deb9u1                 all          time zone and daylight-saving time data
     ii  ucf                        3.0036                         all          Update Configuration File(s): preserve user changes to config files
-    ii  unzip                      6.0-21+deb9u1                  amd64        De-archiver for .zip files
+    ii  unzip                      6.0-21+deb9u2                  amd64        De-archiver for .zip files
     ii  util-linux                 2.29.2-1+deb9u1                amd64        miscellaneous system utilities
     ii  whiptail                   0.52.19-1+b1                   amd64        Displays user-friendly dialog boxes from shell scripts
     ii  xtail                      2.1-5.1+b1                     amd64        like "tail -f", but works on truncated files, directories, more
