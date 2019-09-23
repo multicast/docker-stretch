@@ -108,7 +108,7 @@ You can define environment variables via `--env` argument found in the following
     ii  libdb5.3:amd64             5.3.28-12+deb9u1               amd64        Berkeley v5.3 Database Libraries [runtime]
     ii  libdebconfclient0:amd64    0.227                          amd64        Debian Configuration Management System (C-implementation library)
     ii  liberror-perl              0.17024-1                      all          Perl module for error/exception handling in an OO-ish way
-    ii  libexpat1:amd64            2.2.0-2+deb9u2                 amd64        XML parsing C library - runtime library
+    ii  libexpat1:amd64            2.2.0-2+deb9u3                 amd64        XML parsing C library - runtime library
     ii  libfdisk1:amd64            2.29.2-1+deb9u1                amd64        fdisk partitioning library
     ii  libffi6:amd64              3.2.1-6                        amd64        Foreign Function Interface library runtime
     ii  libgcc1:amd64              1:6.3.0-18+deb9u1              amd64        GCC support library
